@@ -8,12 +8,12 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #C70039;
+    background: linear-gradient(90deg, rgba(152,3,3,1) 0%, rgba(212,52,52,1) 45%, rgba(144,10,10,0.9668242296918768) 99%);
 }
 
 /* ------------nav-------------- */
 header{
-    background-color: #FBFBFB;
+    background-color: #e0d7d7;
     justify-content: space-between;
     display: flex;
     padding: 20px;
@@ -24,23 +24,66 @@ a {
     text-decoration: none;
     color: rgb(1999, 39, 3);
   }
-  
-  .nav img {
-    width: 4.5rem;
-    height: 4.5rem;
+  a:hover{
+    color: rgb(1999, 39, 3);
   }
-  
+  button{
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px;
+    text-align: center;
+    background: 
+    linear-gradient(currentColor 0 0) 
+    bottom /var(--d, 20%) 3px 
+    no-repeat;
+    transition:0.5s;
+  }
+  button:hover{
+    color: rgb(1999, 39, 3);
+    --d: 80%;
+  }
+  .nav img {
+    width: 200px;
+    height: 100px;
+  }
+
   .nav {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
+  }
+  
+  .bloque{
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .categorias{
+    padding: 20px;
+  }
+  /* ------------ carrousel-------------- */
+  .swiper {
+    width: 100%;
+  }
+
+  .swiper img{
+    width: 1380px;
+    height: 370px;
+    object-fit: cover;
   }
 
   /* ------------------ main----------------- */
-
-
+   .datos{
+    text-align: center;
+    color: white;
+   }
   .map{
        display: flex;
        justify-content: center;
        margin: 30px;
   }
+
+
+

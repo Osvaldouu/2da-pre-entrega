@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./estilos/style.css">
     <title>Proyecto Javascript</title>
 </head>
+
 <body>
     <header>
         <div class="nav">
@@ -15,28 +18,41 @@
         <nav class="nav-inicio">
             <div class="categorias">
                 <div class="categorias-bloque">
-                    <a class="bloque" href="index.html">Inicio</a>
-                    <a class="bloque" href="./pages/contacto.html">Contacto</a>
-                    <a class="bloque" href="./pages/productos.html">Productos</a>
-                    <a class="bloque" href="./pages/quienes somos.html">Quienes somos</a>
+                    <a class="bloque" href="index.html"><button>Inicio</a></button>
+                    <a class="bloque" href="./pages/contacto.html"><button>Contacto</a></button>
+                    <a class="bloque" href="./pages/productos.html"><button>Productos</a></button>
+                    <a class="bloque" href="./pages/quienes somos.html"><button>Quienes Somos</a></button>
                 </div>
             </div>
         </nav>
     </header>
-   <main>
-        <h2>¿Donde estamos ubicados?</h2>
-        <p>Catamarca, Argentina</p>
-
-        <section>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.1125964558187!2d-65.81293082951422!3d-28.47636378206866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942429271ae7c92b%3A0x2c3ada1c1b0184b0!2sTOMACO%20Verduleria!5e0!3m2!1ses!2sar!4v1678138884911!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+    <main>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./img/slide2-img.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/slider-envio.jpg"" alt=""></div>
             </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
-        </section>
-   </main>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </main>
+    
+    <section>
+        
+    </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/name.js"></script>
 </body>
+
 </html>

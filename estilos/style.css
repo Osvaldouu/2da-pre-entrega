@@ -27,7 +27,7 @@ a {
   a:hover{
     color: rgb(1999, 39, 3);
   }
-  button{
+  .nav-inicio button{
     border: none;
     border-radius: 4px;
     text-decoration: none;

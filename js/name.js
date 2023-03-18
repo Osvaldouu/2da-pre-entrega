@@ -14,10 +14,13 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-
+  autoplay: {
+     delay: 4000,
+  },
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    dynamicBullets: true,
   },
 
   // Navigation arrows
@@ -26,10 +29,6 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
 });
 
 
@@ -54,4 +53,23 @@ cardVerduras.forEach((cards)=>{
   
   productContainer.appendChild(div)
 })
+
+
+//---------------------- swpiter productos---------------------//
+
+const swiperProducts = new Swiper('.swiper-product', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+     delay: 11000,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
 

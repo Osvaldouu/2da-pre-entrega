@@ -37,17 +37,19 @@ const swiper = new Swiper('.swiper', {
 const productContainer = document.getElementById("productos")
 
 const cardVerduras = [
-  {id:1, name:"Frutas", img:"./img/card1.jpg"},
-  {id:2, name:"Verduras", img:"./img/card2.jpg"},
-  {id:3, name:"Verdeos Frescos", img:"./img/card3.jpg"}
+  {id:1, name:"FRUTAS", img:"./img/card1.jpg"},
+  {id:2, name:"VERDURAS", img:"./img/card2.jpg"},
+  {id:3, name:"VERDEOS FRESCOS", img:"./img/card3.jpg"}
 ]
 
 cardVerduras.forEach((cards)=>{
   const div = document.createElement ("div")
+  div.classList.add ("cards")
   div.innerHTML = `
-  <img src="${cards.img}" alt="">
-  <h3>${cards.name}</h3>
-  <button id="">Catalogo</button>
+  <img src="${cards.img}" alt="${cards.name}">
+  <h3 class="text-card">${cards.name}</h3>
+  
+  <button class="buton-card" id="">Catalogo</button>
   `
   
   productContainer.appendChild(div)

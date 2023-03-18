@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./estilos/style.css">
     <title>Proyecto Javascript</title>
@@ -12,19 +13,20 @@
 
 <body>
     <header>
-        <div class="nav">
-            <img src="./img/logo_small.png" alt="tomate">
-        </div>
-        <nav class="nav-inicio">
-            <div class="categorias">
-                <div class="categorias-bloque">
-                    <a class="bloque" href="index.html"><button>Inicio</a></button>
-                    <a class="bloque" href="./pages/contacto.html"><button>Contacto</a></button>
-                    <a class="bloque" href="./pages/productos.html"><button>Productos</a></button>
-                    <a class="bloque" href="./pages/quienes somos.html"><button>Quienes Somos</a></button>
-                </div>
-            </div>
+
+        <!-- <input type="checkbox" name="" id="toggler"> -->
+        <!-- <label for="toggler" class="bx bx-menu"></label> -->
+
+        <img src="./img/logo_small.png" alt="logo tomato">
+
+        <nav class="navbar">
+            <a href="./index.html">INICIO</a>
+            <a href="./pages/contacto.html">CONTACTO</a>
+            <a href="./pages/productos.html">PRODUCTOS</a>
         </nav>
+        <div class="iconos">
+            <i class='bx bx-cart-alt'><span id="counter">0</span></i>
+        </div>
     </header>
     <main>
         <!-- Slider main container -->
@@ -36,23 +38,91 @@
                 <div class="swiper-slide"><img src="./img/slider-envio.jpg"" alt=""></div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+            <div class=" swiper-pagination"></div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
 
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-        </div>
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
     </main>
-    
-    <section id="productos">
-        
-    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./js/name.js"></script>
+    <section class="shop-container">
+        <h1 class="shop-titulo">Seleccione su Catalogo</h1>
+        <div class="card-container" id="productos""></div>
+    </section>
+    <footer>
+        <div class=" footer-contenidos">
+            <div class="footer-nosotros">
+                <img src="./img/logo_small_icon_only_inverted.png" alt="">
+                <p>Tomato Verduleria</p>
+
+                <div class="footer-social-media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <ul class="footer-listas">
+                <li>
+                    <h3>Catalogos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Frutas</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Verduras</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Verdeos Frescos</a>
+                </li>
+            </ul>
+            <ul class="footer-listas">
+                <li>
+                    <h3>Contacto</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Ubicacion</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Ayuda</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Horarios</a>
+                </li>
+            </ul>
+            <div class="footer-contactar">
+                <h3>Novedades</h3>
+                <p>
+                    Ingresa tu email para recibir las novedades de la pagina!
+                </p>
+                <div class="input-grupo">
+                    <input type="email" class="email">
+                    <button>
+                        <i class='bx bx-envelope'></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyrigth">
+           <p>By Osvaldo Carrizo</p>
+        </div>
+    </footer>
+        <script src=" https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"> </script>
+        <script src="./js/name.js">
+        </script>
 </body>
 
 </html>

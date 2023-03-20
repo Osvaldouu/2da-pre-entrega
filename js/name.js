@@ -62,14 +62,7 @@ const swiperProducts = new Swiper('.swiper-product', {
   direction: 'horizontal',
   loop: true,
   autoplay: {
-     delay: 11000,
+     delay: 3000,
   },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
 });
 

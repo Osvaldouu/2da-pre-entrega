@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,400;1,600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,300;1,600;1,700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   outline: none;
   border: none;
   text-decoration: none;
@@ -15,9 +15,9 @@ body {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(
     90deg,
-    rgba(152, 3, 3, 1) 0%,
-    rgba(212, 52, 52, 1) 45%,
-    rgba(144, 10, 10, 0.9668242296918768) 99%
+    #FF3E08,
+    #E15959,
+    #FF3E08 99%
   );
 }
 html {
@@ -25,45 +25,29 @@ html {
 }
 
 /* ------------nav-------------- */
-header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: white;
-  padding: 1rem 9%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-header img {
-  width: 200px;
-  height: 100px;
+header{
+   display: flex;
+   align-items:center;
+   justify-content: space-between;
+   padding: 2rem;
+   background-color: #ececec;
 }
 
-header .navbar a {
-  font-size: 20px;
-  padding: 0 1.5rem;
-  color: rgb(1999, 39, 3);
-}
-header .navbar a:hover {
-  color: black;
+.logo{
+  max-width: 19rem;
 }
 
-header .iconos i {
-  font-size: 3rem;
-  color: rgb(1999, 39, 3);
-  margin: 0.5rem;
-}
-header .iconos i:hover {
-  color: black;
+.nav-list{
+  list-style: none;
+  display: flex ;
 }
 
-header #toggler {
-  display: none;
+.nav-list li a{
+  text-decoration: none;
+  color: #FF3E08;
 }
+
+
 
 /* ------------ carrousel-------------- */
 .swiper {
@@ -386,11 +370,17 @@ footer {
   flex-direction: column;
   align-items: center;
   border: 2px solid #404258;
-  border-radius: 4px;
+  border-radius: 10px;
   margin: 25px;
   background-color: white;
   width: 200px;
   padding: 2rem;
+  transition: all 0.20s;
+}
+
+.prod-cards:hover{
+  transform: translateY(-15px);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .precio-producto{
@@ -436,6 +426,7 @@ footer {
   transition: all 0.3s ease;
 }
 
+
 .btn-41:hover {
   color: white;
 }
@@ -448,75 +439,111 @@ footer {
 
 .btn-41:active {
   top: 2px;
+  
 }
 
 
 /* -------------medias querys------------------- */
+@media (max-width: 1440px){
 
-@media (max-width: 426px) {
+}
+@media (max-width: 1024px) {
+ 
+  .swiper img {
+    height: 344px;
+  }
+
+  /* --------media query productos--------- */
+
+  .product-container{
+    display: grid;
+   place-items: center;
+   grid-template-columns: repeat(3, 1fr);
+   justify-content: center; 
+    margin-top: 5px; 
+ }
+}
+
+@media (max-width: 768px) {
+  body{
+    overflow: hidden;
+  }
+
+
+  
+
+  .swiper img {
+    height: 268px;
+  }
+
+  
+  .footer-contenidos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .swiper-product .swiper-slide img {
+    width: 400px;
+    height: 300px;
+  }
+  /* ------meadiaquery productos------ */
+
+  .product-container{
+     display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center; 
+     margin-top: 5px; 
+  }
+}
+
+@media (max-width: 425px) {
   html {
     font-size: 50%;
   }
+
   .footer-contenidos {
     grid-template-columns: repeat(1, 1fr);
     padding: 3rem 2rem;
   }
 
-  .swiper-product .swiper-slide img {
-    width: 425px;
-    height: 300px;
-    display: block;
-    margin: auto;
+  .swiper img {
+    height: 144px;
   }
-
+  
   .shop-titulo {
     padding-left: 0.6rem;
     font-weight: 800;
   }
-}
-@media (max-width: 768px) {
-  .footer-contenidos {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-}
 
-@media (max-width: 991px) {
-  html {
-    font-size: 55%;
+  .swiper-product .swiper-slide img {
+    width: 400px;
+    height: 260px;
   }
-  header {
-    padding: 2rem;
+  
+  /* --------media querys productos-------- */
+  
+  .title-product{
+    height: 150px;
+    width: 100%;
   }
-}
-@media (max-width: 768px) {
-  /* header .bx-menu{
+  .title-product h1{
     display: block;
-  } */
-  header .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #eee;
-    border-top: 0.5rem solid rgb(0, 0, 0, 0.1);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    margin-top: 20px;
   }
-  header .iconos i {
-    font-size: 3.5rem;
-  }
-
-  header .navbar a {
-    margin: 1.5rem;
-    padding: 1.5rem;
-    background: #fff;
-    border: 0.5rem solid rgb(0, 0, 0, 0.1);
+  .title-product h2{
     display: block;
+    letter-spacing: 5px;
+    margin-top: 10px;
+  }
+  .product-container{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    margin-top: 5px;
   }
 }
 
-@media (min-whidth: 1024px) {
-  .swiper img {
-    height: 344px;
-  }
-}
+
+

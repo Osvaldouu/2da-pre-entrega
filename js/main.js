@@ -1,3 +1,5 @@
+//button//
+
 
 //catalogos//
 
@@ -24,15 +26,25 @@ const productCard = [
 ]
 
 productCard.forEach ((prod) =>{
+   const {id, name, Precio, Presentacion, img} = prod
    const div = document.createElement("div")
    div.classList.add ("prod-cards")
-   div.innerHTML = `
-    <img src="${prod.img}" alt="${prod.name}">  
+   div.innerHTML += `
+    <img src="${prod.img}" alt="${name}">
     <p class="precio-producto">$ ${prod.Precio}</p>
     <p class="p-product">${prod.Presentacion}</p>
     <h3 class="name-product">${prod.name}</h3>
 
-    <button class="b-product  btn-41">Agregar al Carrito</button>
-   ` 
+    <button id="prod${id}" class="b-product btn-41" >Agregar al Carrito</button>
+   `
    productContainer.appendChild (div)
+   let botonCarrito = document.getElementById(`prod${id}`)
+   botonCarrito.addEventListener ("click", ()=>{
+      agregarProducto(id)
+   })
 })
+
+function agregarProducto(id){
+   console.log(id);
+}
+

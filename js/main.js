@@ -13,7 +13,6 @@ cerrar.addEventListener ("click", ()=>{
    nav.classList.remove("visible")
 })
 
-console.log(abrir)
 //catalogos//
 
 const productContainer = document.getElementById ("productos")

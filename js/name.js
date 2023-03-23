@@ -1,12 +1,16 @@
+//header//
+const nav= document.getElementById ("nav")
+const abrir = document.getElementById ("abrir")
+const cerrar = document.getElementById ("cerrar")
 
-//alert("Bienvenidos a la Verduleria Tomato!");
 
-//let name = prompt("Ingresa tu nombre");
+abrir.addEventListener ("click", () =>{
+   nav.classList.add("visible");
+})
 
-// while (name.length === 0) {
-//   name = prompt("Ingresa tu nombre");
-// }
-
+cerrar.addEventListener ("click", ()=>{
+   nav.classList.remove("visible")
+})
 
 //-------------carrousel------------//
 

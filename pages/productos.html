@@ -14,11 +14,11 @@
 <body>
     <header>
 
+        <button id="abrir" class="abrir-menu"><i class="bx bx-menu"></i></button>
         <img class="logo" src="../img/logo_small.png" alt="">
-        <button class="abrir-menu">Abrir</button>
-        <nav class="nav">
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class='bx bx-x'></i></button>
             <ul class="nav-list">
-                <button class="cerrar-menu">cerrar</button>
                 <li><a href="../index.html">INICIO</a></li>
                 <li><a href="./contacto.html">CONTACTO</a></li>
                 <li><a href="./productos.html">PRODUCTOS</a></li>
@@ -28,28 +28,13 @@
             <i class='bx bx-cart-alt'><span id="counter">0</span></i>
         </div>
     </header>
+    
     <main>
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="../img/slide2-img.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="../img/slider-envio.jpg"" alt=""></div>
-                </div>
-                <!-- If we need pagination -->
-                <div class=" swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-    </main>
-    <section>
         <div class="title-product">
             <h1>Productos</h1>
             <h2>Listado completo</h2>
         </div>
-    </section>
+    </main>
     <section class="container">
         <div class="product-container" id="productos"></div>
     </section>

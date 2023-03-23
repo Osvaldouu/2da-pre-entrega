@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=s, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="nav">
-            <img src="../img/logo_small.png" alt="tomate">
-        </div>
-        <nav class="nav-inicio">
-            <div class="categorias">
-                <div class="categorias-bloque">
-                    <a class="bloque" href="../index.html">Inicio</a>
-                    <a class="bloque" href="contacto.html">Contacto</a>
-                    <a class="bloque" href="productos.html">Productos</a>
-                    <a class="bloque" href="quienes somos.html">Quienes somos</a>
-                </div>
-            </div>
+        <button id="abrir" class="abrir-menu"><i class="bx bx-menu"></i></button>
+        <img class="logo" src="../img/logo_small.png" alt="">
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class='bx bx-x'></i></button>
+            <ul class="nav-list">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+                <li><a href="./productos.html">PRODUCTOS</a></li>
+            </ul>
         </nav>
+        <div class="iconos">
+            <i class='bx bx-cart-alt'><span id="counter">0</span></i>
+        </div>
+    </header>
     </header>
 
     <main>
@@ -34,6 +37,73 @@
             </iframe>
         </div>
     </main>
-    
+    <footer>
+        <div class=" footer-contenidos">
+            <div class="footer-nosotros">
+                <img src="../img/logo_small_icon_only_inverted.png" alt="">
+                <p>Tomato Verduleria</p>
+
+                <div class="footer-social-media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <ul class="footer-listas">
+                <li>
+                    <h3>Catalogos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Frutas</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Verduras</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Verdeos Frescos</a>
+                </li>
+            </ul>
+            <ul class="footer-listas">
+                <li>
+                    <h3>Contacto</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Ubicacion</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Ayuda</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Horarios</a>
+                </li>
+            </ul>
+            <div class="footer-contactar">
+                <h3>Novedades</h3>
+                <p>
+                    Ingresa tu email para recibir las novedades de la pagina!
+                </p>
+                <div class="input-grupo">
+                    <input type="email" class="email">
+                    <button>
+                        <i class='bx bx-envelope'></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyrigth">
+            <a class="link-yo" href="https://www.linkedin.com/in/osvaldo-carrizo-94842023b/ " target="_blank">Proyecto
+                by Osvaldo Carrizo</a>
+        </div>
+    </footer>
 </body>
 </html>

@@ -37,6 +37,8 @@ const productCard = [
 
 ]
 
+let carrito = []
+
 productCard.forEach ((prod) =>{
    const {id, name, Precio, Presentacion, img} = prod
    const div = document.createElement("div")
@@ -50,6 +52,7 @@ productCard.forEach ((prod) =>{
     <button id="prod${id}" class="b-product btn-41" >Agregar al Carrito</button>
    `
    productContainer.appendChild (div)
+   
    let botonCarrito = document.getElementById(`prod${id}`)
    botonCarrito.addEventListener ("click", ()=>{
       agregarProducto(id)
@@ -57,6 +60,12 @@ productCard.forEach ((prod) =>{
 })
 
 function agregarProducto(id){
-   console.log(id);
+   const item = productCard.find ((prod) => prod.id === id)
+   carrito.push (item)
+   console.log(carrito);
 }
+
+localStorage.setItem (productCard, "imagenes")
+
+localStorage.getItem (productCard, "imagenes")
 

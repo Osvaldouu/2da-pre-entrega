@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,300;1,400;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,300;1,400;1,600;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,56 +12,49 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(
-    90deg,
-    #E15959,
-    #FF3E08,
-    #E15959 99%
-  );
+  background: linear-gradient(90deg, #e15959, #ff3e08, #e15959 99%);
 }
 html {
   font-size: 62.5%;
 }
 
 /* ------------nav-------------- */
-header{
-   display: flex;
-   align-items:center;
-   justify-content: space-between;
-   padding: 2rem;
-   background-color: #ececec;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #ececec;
 }
 
-.logo{
+.logo {
   width: 170px;
   height: 80px;
 }
 
-.nav-list{
+.nav-list {
   list-style: none;
-  display: flex ;
+  display: flex;
   gap: 5rem;
 }
 
-.nav-list li a{
+.nav-list li a {
   text-decoration: none;
-  color: #FF3E08;
+  color: #ff3e08;
   font-size: 1.8rem;
   font-weight: 400;
 }
 
 .abrir-menu,
-.cerrar-menu{
+.cerrar-menu {
   display: none;
 }
 
-.bx-cart-alt{
+.bx-cart-alt {
   font-size: 30px;
   font-weight: 400;
-  color: #FF3E08;
+  color: #ff3e08;
 }
-
-
 
 /* ------------ carrousel-------------- */
 .swiper {
@@ -214,8 +207,8 @@ header{
   margin: auto;
   padding-top: 40px;
   object-fit: cover;
-  width: 570px;
-  height: 390px;
+  width: 500px;
+  height: 380px;
 }
 
 /* ------------------footer---------------- */
@@ -337,8 +330,8 @@ footer {
 }
 
 /* --------------PRODUCTOS------------------ */
-.title-product{
-  display: flex ;
+.title-product {
+  display: flex;
   flex-direction: column;
   letter-spacing: 3px;
   background-image: url(../img/top-categoria.jpg);
@@ -346,27 +339,27 @@ footer {
   height: 203px;
   color: white;
 }
-.title-product h1{
+.title-product h1 {
   font-size: 30px;
   font-weight: bold;
   display: block;
   margin-top: 40px;
 }
 
-.title-product h2{
+.title-product h2 {
   font-weight: 600;
   letter-spacing: 10px;
   margin-top: 16px;
   font-size: 25px;
   display: block;
 }
-.container{
+.container {
   max-width: 1200px;
   width: 100%;
   height: 100%;
   margin: auto;
 }
-.product-container{
+.product-container {
   width: 100%;
   display: grid;
   place-items: center;
@@ -374,12 +367,12 @@ footer {
   justify-content: center;
 }
 
-.product-container img{
+.product-container img {
   width: 200px;
   height: 200px;
 }
 
-.prod-cards{
+.prod-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -389,26 +382,26 @@ footer {
   background-color: white;
   width: 230px;
   padding: 2rem;
-  transition: all 0.20s;
+  transition: all 0.2s;
 }
 
-.prod-cards:hover{
+.prod-cards:hover {
   transform: translateY(-15px);
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-.precio-producto{
+.precio-producto {
   margin-top: 20px;
   font-size: 25px;
   color: rgb(15, 136, 15);
   font-weight: 600;
 }
-.name-product{
+.name-product {
   font-size: 2.4rem;
   font-weight: 600;
 }
 
-.b-product{
+.b-product {
   padding: 10px 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -440,7 +433,6 @@ footer {
   transition: all 0.3s ease;
 }
 
-
 .btn-41:hover {
   color: white;
 }
@@ -453,37 +445,33 @@ footer {
 
 .btn-41:active {
   top: 2px;
-  
 }
-
 
 /* -------------medias querys------------------- */
-@media (max-width: 1440px){
-
+@media (max-width: 1440px) {
 }
 @media (max-width: 1024px) {
- 
   .swiper img {
     height: 344px;
   }
 
   /* --------media query productos--------- */
 
-  .product-container{
+  .product-container {
     display: grid;
-   place-items: center;
-   grid-template-columns: repeat(3, 1fr);
-   justify-content: center; 
-    margin-top: 5px; 
- }
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin-top: 5px;
+  }
 }
 
 @media (max-width: 768px) {
   .abrir-menu,
-  .cerrar-menu{
+  .cerrar-menu {
     display: block;
   }
-  .nav{
+  .nav {
     opacity: 0;
     visibility: hidden;
     display: flex;
@@ -496,46 +484,43 @@ footer {
     bottom: 0;
     background-color: #ececec;
     padding: 5rem;
-    box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5) ;
+    box-shadow: 0 0 0 100vmax rgb(0, 0, 0, 0.5);
     z-index: 2;
   }
 
-  .nav.visible{
+  .nav.visible {
     opacity: 1;
     visibility: visible;
   }
-  .nav-list{
+  .nav-list {
     flex-direction: column;
     align-items: end;
   }
-  
-  .logo{
-     width: 140px;
-     height: 85px;
-  }
-  .bx-menu{
-    font-size: 30px;
-    font-weight: 400;
-    color: #FF3E08;
-  }
-  .bx-cart-alt{
-    font-size: 30px;
-    font-weight: 400;
-    color: #FF3E08;
-  }
-  .bx-x{
-    font-size: 30px;
-    font-weight: 400;
-    color: #FF3E08;
-  }
 
-  
+  .logo {
+    width: 140px;
+    height: 85px;
+  }
+  .bx-menu {
+    font-size: 30px;
+    font-weight: 400;
+    color: #ff3e08;
+  }
+  .bx-cart-alt {
+    font-size: 30px;
+    font-weight: 400;
+    color: #ff3e08;
+  }
+  .bx-x {
+    font-size: 30px;
+    font-weight: 400;
+    color: #ff3e08;
+  }
 
   .swiper img {
     height: 268px;
   }
 
-  
   .footer-contenidos {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -547,12 +532,12 @@ footer {
   }
   /* ------meadiaquery productos------ */
 
-  .product-container{
-     display: grid;
+  .product-container {
+    display: grid;
     place-items: center;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center; 
-     margin-top: 5px; 
+    justify-content: center;
+    margin-top: 5px;
   }
 }
 
@@ -569,7 +554,7 @@ footer {
   .swiper img {
     height: 144px;
   }
-  
+
   .shop-titulo {
     padding-left: 0.6rem;
     font-weight: 800;
@@ -579,23 +564,23 @@ footer {
     width: 400px;
     height: 260px;
   }
-  
+
   /* --------media querys productos-------- */
-  
-  .title-product{
+
+  .title-product {
     height: 150px;
     width: 100%;
   }
-  .title-product h1{
+  .title-product h1 {
     display: block;
     margin-top: 20px;
   }
-  .title-product h2{
+  .title-product h2 {
     display: block;
     letter-spacing: 5px;
     margin-top: 10px;
   }
-  .product-container{
+  .product-container {
     display: grid;
     place-items: center;
     grid-template-columns: repeat(1, 1fr);
@@ -603,6 +588,3 @@ footer {
     margin-top: 5px;
   }
 }
-
-
-

@@ -1,0 +1,261 @@
+[
+  {
+    "id": 1,
+    "name": "Tomate Perita",
+    "precio": 350,
+    "presentacion": "Kilos",
+    "img": "../img/producto1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Anquin",
+    "precio": 250,
+    "presentacion": "Kilos",
+    "img": "../img/producto2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Pimiento Rojo",
+    "precio": 650,
+    "presentacion": "Kilos",
+    "img": "../img/producto3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Durazno",
+    "precio": 950,
+    "presentacion": "Kilos",
+    "img": "../img/producto4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Pera",
+    "precio": 350,
+    "presentacion": "Kilos",
+    "img": "../img/producto5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Uva verde",
+    "precio": 650,
+    "presentacion": "Kilos",
+    "img": "../img/producto6.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Acelga",
+    "precio": 80,
+    "presentacion": "Atado",
+    "img": "../img/producto7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Zapallito",
+    "precio": 300,
+    "presentacion": "Kilos",
+    "img": "../img/producto8.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Rucula",
+    "precio": 80,
+    "presentacion": "Atado",
+    "img": "../img/producto9.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Palta",
+    "precio": 2700,
+    "presentacion": "Kilos",
+    "img": "../img/producto10.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Cebolla",
+    "precio": 180,
+    "presentacion": "Kilos",
+    "img": "../img/producto11.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Berenjena",
+    "precio": 250,
+    "presentacion": "Kilos",
+    "img": "../img/producto12.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Batata",
+    "precio": 350,
+    "presentacion": "Kilos",
+    "img": "../img/producto13.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Pepino",
+    "precio": 180,
+    "presentacion": "Kilos",
+    "img": "../img/producto14.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Limon",
+    "precio": 180,
+    "presentacion": "Kilos",
+    "img": "../img/producto15.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Perejil",
+    "precio": 80,
+    "presentacion": "Atado",
+    "img": "../img/producto16.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Ciboullete",
+    "precio": 80,
+    "presentacion": "Atado",
+    "img": "../img/producto17.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Repollo Morado",
+    "precio": 450,
+    "presentacion": "Unidad",
+    "img": "../img/producto18.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Lechuga Crespa",
+    "precio": 80,
+    "presentacion": "Atado",
+    "img": "../img/producto19.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Pimiento Verde",
+    "precio": 350,
+    "presentacion": "Kilos",
+    "img": "../img/producto20.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Naranja",
+    "precio": 650,
+    "presentacion": "Kilos",
+    "img": "../img/producto21.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Manzana Roja",
+    "precio": 600,
+    "presentacion": "Kilos",
+    "img": "../img/producto22.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Kiwi",
+    "precio": 2600,
+    "presentacion": "Kilos",
+    "img": "../img/producto23.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Ciruelo",
+    "precio": 550,
+    "presentacion": "Kilos",
+    "img": "../img/producto24.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Cherry",
+    "precio": 800,
+    "presentacion": "Kilos",
+    "img": "../img/producto25.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Pelon",
+    "precio": 850,
+    "presentacion": "Kilos",
+    "img": "../img/producto26.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Papas",
+    "precio": 200,
+    "presentacion": "Kilos",
+    "img": "../img/producto27.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Remolacha",
+    "precio": 350,
+    "presentacion": "Unidad",
+    "img": "../img/producto28.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Repollo Verde",
+    "precio": 450,
+    "presentacion": "Unidad",
+    "img": "../img/producto29.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Tomate Redondo",
+    "precio": 350,
+    "presentacion": "Kilos",
+    "img": "../img/producto30.jpg"
+  },
+  {
+    "id": 31,
+    "name": "Zanahoria",
+    "precio": 250,
+    "presentacion": "Kilos",
+    "img": "../img/producto31.jpg"
+  },
+  {
+    "id": 32,
+    "name": "Banana",
+    "precio": 600,
+    "presentacion": "Kilos",
+    "img": "../img/producto32.jpg"
+  },
+  {
+    "id": 33,
+    "name": "Brocoli",
+    "precio": 350,
+    "presentacion": "Unidad",
+    "img": "../img/producto33.jpg"
+  },
+  {
+    "id": 34,
+    "name": "Cebolla Morada",
+    "precio": 450,
+    "presentacion": "Kilos",
+    "img": "../img/producto34.jpg"
+  },
+  {
+    "id": 35,
+    "name": "Ajo",
+    "precio": 120,
+    "presentacion": "Unidad",
+    "img": "../img/producto35.jpg"
+  },
+  {
+    "id": 36,
+    "name": "Uva Morada",
+    "precio": 650,
+    "presentacion": "Kilos",
+    "img": "../img/producto36.jpg"
+  },
+  {
+    "id": 37,
+    "name": "Zapallo Cabuto",
+    "precio": 300,
+    "presentacion": "Kilos",
+    "img": "../img/producto37.jpg"
+  }
+]

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <button id="abrir" class="abrir-menu"><i class="bx bx-menu"></i></button>
@@ -25,18 +27,36 @@
             <i class='bx bx-cart-alt'><span id="counter">0</span></i>
         </div>
     </header>
-    </header>
 
     <main>
         <div class="datos">
-            <h2>¿Donde estamos ubicados?</h2>
+            <h1>¿Donde estamos ubicados?</h1>
             <p>Catamarca, Argentina</p>
         </div>
+    </main>
+    <div class="contact-map">
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.1125964558187!2d-65.81293082951422!3d-28.47636378206866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942429271ae7c92b%3A0x2c3ada1c1b0184b0!2sTOMACO%20Verduleria!5e0!3m2!1ses!2sar!4v1678138884911!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.1125964558187!2d-65.81293082951422!3d-28.47636378206866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942429271ae7c92b%3A0x2c3ada1c1b0184b0!2sTOMACO%20Verduleria!5e0!3m2!1ses!2sar!4v1678138884911!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
-    </main>
+        <div class="contact">
+            <div class="contact-container">
+                <form action="" class="form">
+                    <h2>¿Tenes alguna duda?. Estamos para ayudarte!. Escribinos las 24 hs.</h2>
+                    <label for="name">Nombre Completo<span>*</span></label>
+                    <input name="name" id="input" placeholder="Example Example" type="text">
+                    <label for="email">Correo Electronico<span>*</span></label>
+                    <input name="email" id="input" placeholder="example@gmail.com" type="email">
+                    <label for="message">Tu Consulta <span>*</span></label>
+                    <textarea name="message" id="input" cols="25" rows="7"></textarea>
+                    <button  class="boton-contacto" id="btn">Enviar Consulta</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class=" footer-contenidos">
             <div class="footer-nosotros">
@@ -105,5 +125,10 @@
                 by Osvaldo Carrizo</a>
         </div>
     </footer>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"> </script>
+    <script src="../js/contact.js"></script>
 </body>
+
 </html>

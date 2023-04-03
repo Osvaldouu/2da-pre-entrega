@@ -8,7 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../estilos/style.css">
-    <title>Productos</title>
+    <title>Productos Tomato</title>
 </head>
 
 <body>
@@ -25,14 +25,28 @@
             </ul>
         </nav>
         <div class="iconos">
-            <i class='bx bx-cart-alt'><span id="counter">0</span></i>
-        </div>
+            <button id="btn-abrir-modal"><i class='bx bx-cart-alt'><span id="counter">0</span></i></button>
+            <div class="modal">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2>Carrito de compras</h2>
+                    <span class="close">&times;</span>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Contenido del carrito de compras -->
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn-cancelar">Borrar Todo</button>
+                    <button class="btn-comprar">Comprar</button>
+                  </div>
+                </div>
+              </div>
     </header>
     
     <main>
         <div class="title-product">
             <h1>Productos</h1>
-            <h2>Listado completo</h2>
+            <h3>Listado completo</h3>
         </div>
     </main>
     <section class="container">

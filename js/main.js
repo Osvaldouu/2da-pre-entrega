@@ -1,71 +1,115 @@
 //button//
 
-const nav= document.getElementById ("nav")
-const abrir = document.getElementById ("abrir")
-const cerrar = document.getElementById ("cerrar")
+const nav = document.getElementById("nav");
+const abrir = document.getElementById("abrir");
+const cerrar = document.getElementById("cerrar");
 
+abrir.addEventListener("click", () => {
+  nav.classList.add("visible");
+});
 
-abrir.addEventListener ("click", () =>{
-   nav.classList.add("visible");
-})
+cerrar.addEventListener("click", () => {
+  nav.classList.remove("visible");
+});
 
-cerrar.addEventListener ("click", ()=>{
-   nav.classList.remove("visible")
-})
+// modal //
+var openBtn = document.getElementById("btn-abrir-modal");
+const modal = document.querySelector(".modal");
+const closeBtn = document.querySelector(".close");
 
-//catalogos//
-
-const productContainer = document.getElementById ("productos")
-
-const productCard = [
-   {id:1, name:"Tomate Perita", Precio: 350, Presentacion: "Kilos", img: "../img/producto1.jpg"},
-   {id:2, name:"Anquin", Precio: 250, Presentacion: "Kilos", img: "../img/producto2.jpg"},
-   {id:3, name:"Pimiento Rojo", Precio: 650, Presentacion: "Kilos", img: "../img/producto3.jpg"},
-   {id:4, name:"Durazno", Precio: 950, Presentacion: "Kilos", img: "../img/producto4.jpg"},
-   {id:5, name:"Pera", Precio: 350, Presentacion: "Kilos", img: "../img/producto5.jpg"},
-   {id:6, name:"Uva Blanca", Precio: 650, Presentacion: "Kilos", img: "../img/producto6.jpg"},
-   {id:7, name:"Acelga", Precio: 80, Presentacion: "Atado", img: "../img/producto7.jpg"},
-   {id:8, name:"Zapallito Verde", Precio: 180, Presentacion: "Kilos", img: "../img/producto8.jpg"},
-   {id:9, name:"Rucula", Precio: 80, Presentacion: "Atado", img: "../img/producto9.jpg"},
-   {id:10, name:"Palta", Precio: 2700, Presentacion: "Kilos", img: "../img/producto10.jpg"},
-   {id:11, name:"Cebolla", Precio: 180, Presentacion: "Kilos", img: "../img/producto11.jpg"},
-   {id:12, name:"Berenjena", Precio: 250, Presentacion: "Kilos", img: "../img/producto12.jpg"},
-   {id:13, name:"Batata", Precio: 350, Presentacion: "Kilos", img: "../img/producto13.jpg"},
-   {id:14, name:"Pepino", Precio: 250, Presentacion: "Kilos", img: "../img/producto14.jpg"},
-   {id:15, name:"Limon", Precio: 180, Presentacion: "Kilos", img: "../img/producto15.jpg"},
-   {id:16, name:"Perejil", Precio: 80, Presentacion: "Atado", img: "../img/producto16.jpg"}
-
-]
-
-let carrito = []
-
-productCard.forEach ((prod) =>{
-   const {id, name, Precio, Presentacion, img} = prod
-   const div = document.createElement("div")
-   div.classList.add ("prod-cards")
-   div.innerHTML += `
-    <img src="${prod.img}" alt="${name}">
-    <p class="precio-producto">$ ${prod.Precio}</p>
-    <p class="p-product">${prod.Presentacion}</p>
-    <h3 class="name-product">${prod.name}</h3>
-
-    <button id="prod${id}" class="b-product btn-41" >Agregar al Carrito</button>
-   `
-   productContainer.appendChild (div)
-   
-   let botonCarrito = document.getElementById(`prod${id}`)
-   botonCarrito.addEventListener ("click", ()=>{
-      agregarProducto(id)
-   })
-})
-
-function agregarProducto(id){
-   const item = productCard.find ((prod) => prod.id === id)
-   carrito.push (item)
-   console.log(carrito);
+openBtn.addEventListener("click", showModal);
+function showModal() {
+  modal.style.display = "block";
 }
 
-localStorage.setItem (productCard, "imagenes")
+function closeModal() {
+  modal.style.display = "none";
+}
+closeBtn.addEventListener("click", closeModal);
+window.addEventListener("click", function (event) {
+  if (event.target == modal) {
+    closeModal();
+  }
+});
+//catalogos//
+let carrito = [];
 
-localStorage.getItem (productCard, "imagenes")
+const url = "../data.json";
+fetch(url)
+  .then((repuesta) => {
+    return repuesta.json();
+  })
+  .then((data) => {
+    const productos = data;
+    renderProducto(productos);
+  });
 
+function renderProducto(prod) {
+  const card = document.querySelector("#productos");
+  prod.forEach((objeto) => {
+    const tarjeta = document.createElement("div");
+    tarjeta.classList.add("prod-cards");
+    tarjeta.innerHTML += `
+    <img src="${objeto.img}" alt="${objeto.name}">
+    <p class="precio-producto">$ ${objeto.precio}</p>
+    <p class="p-product">${objeto.presentacion}</p>
+    <h3 class="name-product">${objeto.name}</h3>
+    
+    <button id="agregar${objeto.id}" class="b-product btn-41" >Agregar al Carrito</button>
+    `;
+    card.appendChild(tarjeta);
+
+    const btnAgregar = document.querySelector(`#agregar${objeto.id}`);
+    btnAgregar.addEventListener("click", () => {
+      agregarAlCarrito(objeto);
+    });
+  });
+}
+
+function agregarAlCarrito(producto) {
+  let existe = carrito.some((prod) => prod.id === producto.id);
+  let prodFind = carrito.find((prod) => prod.id === producto.id);
+  existe === false ? (producto.cantidad = 1) : prodFind.cantidad++;
+  existe || carrito.push(producto);
+
+  mostrarCarrito(producto);
+  // actualizarCarrito()
+  console.log(producto);
+}
+
+function mostrarCarrito(arr) {
+  const carritoContent = document.querySelector(".modal-body");
+  carritoContent.innerHTML = "";
+
+  for (const prod in arr) {
+    const { id, name, precio, presentacion, img, kilos } = arr;
+    const div = document.createElement("div");
+    div.classList.add("carritoRelleno");
+    div.innerHTML = `
+        <img src="${img}"alt="${name}">
+        <p>${name}</p>
+        <p>${precio}</p>
+        <p>${presentacion}</p>
+        <p>${kilos}</p>
+      `;
+
+    carritoContent.appendChild(div);
+  }
+}
+
+// function actualizarCarrito() {
+//   const modalContenido = document.querySelector("modal-contenido");
+//   // modalContenido.innerHTML = '';
+
+//   carrito.forEach ((prod)=>{
+//     const rellenoModal = document.createElement ('div')
+//     rellenoModal.classList.add('carritoRelleno');
+//     rellenoModal.innerHTML = `
+//       <p>${prod.name}</p>
+//       <p>${prod.precio}</p>
+//       <img src="${prod.img}"alt="${prod.name}">
+//     `;
+
+//     modalContenido.appendChild(rellenoModal);
+//   });
+// }

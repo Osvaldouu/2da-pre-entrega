@@ -54,6 +54,96 @@ header {
   font-size: 30px;
   font-weight: 400;
   color: #ff3e08;
+  cursor: pointer;
+}
+
+
+/* --------- modal ---------- */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe; 
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  margin: 0;
+}
+
+
+.close {
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 10px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn-cancelar,
+.btn-comprar {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-cancelar {
+  background-color: #ccc;
+}
+
+.btn-comprar {
+  background-color: rgba(144, 10, 10, 0.9668242296918768);
+  color: white;
+}
+
+.carritoRelleno{
+  display: flex;
+  justify-content: space-around;
+  
+}
+.carritoRelleno img{
+  width: 100px;
+}
+.carritoRelleno p{
+  font-size: 10px;
+  margin-left: 20px;
 }
 
 /* ------------ carrousel-------------- */
@@ -338,7 +428,7 @@ footer {
   margin-top: 40px;
 }
 
-.title-product h2 {
+.title-product h3 {
   font-weight: 600;
   letter-spacing: 10px;
   margin-top: 16px;
@@ -577,7 +667,7 @@ footer {
     box-shadow: 0 0 0 100vmax rgb(0, 0, 0, 0.5);
     z-index: 2;
   }
-
+  
   .nav.visible {
     opacity: 1;
     visibility: visible;
@@ -586,12 +676,13 @@ footer {
     flex-direction: column;
     align-items: end;
   }
-
+  
   .logo {
     width: 140px;
     height: 85px;
   }
   .bx-menu {
+    cursor: pointer;
     font-size: 30px;
     font-weight: 400;
     color: #ff3e08;

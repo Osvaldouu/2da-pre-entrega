@@ -62,7 +62,7 @@ header {
 .modal {
   display: none; 
   position: fixed; 
-  z-index: 1; 
+  z-index: 2; 
   left: 0;
   top: 0;
   width: 100%;
@@ -105,7 +105,13 @@ header {
 }
 
 .modal-body {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.modal-body span{
+   font-size: 15px;
+
 }
 
 .modal-footer {
@@ -129,21 +135,41 @@ header {
 }
 
 .btn-comprar {
-  background-color: rgba(144, 10, 10, 0.9668242296918768);
+  background-color: red;
   color: white;
 }
 
 .carritoRelleno{
   display: flex;
   justify-content: space-around;
-  
+  flex: 1;
+  margin: 10px;
+  text-align: center;
 }
 .carritoRelleno img{
   width: 100px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 .carritoRelleno p{
-  font-size: 10px;
+  font-size: 15px;
   margin-left: 20px;
+}
+.boton-borrar{
+  width: 80px;
+  height: 30px;
+  background-color: red;
+  font-size: 8px;
+  color: white;
+  border-radius: 20px;
+  font-weight: 700;
+}
+.boton-borrar:hover{
+  background-color: rgba(212, 52, 52, 1);
+}
+
+.total{
+  font-size: 15px;
 }
 
 /* ------------ carrousel-------------- */
@@ -239,6 +265,7 @@ header {
 }
 
 .buton-card {
+  cursor: pointer;
   font-size: 15px;
   font-weight: 600;
   margin-top: 10px;
@@ -665,7 +692,7 @@ footer {
     background-color: #ececec;
     padding: 5rem;
     box-shadow: 0 0 0 100vmax rgb(0, 0, 0, 0.5);
-    z-index: 2;
+    z-index: 3;
   }
   
   .nav.visible {
@@ -812,4 +839,66 @@ footer {
   font-size: 15px;
   width: 170px;
 }
+
+/*----------modal-------------- */
+.modal-content {
+  padding: 10px;
+  width: 90%;
+}
+
+.modal-header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 17px;
+}
+
+
+.close {
+  font-size: 44px;
+}
+
+
+.modal-footer {
+  margin-top: 30px;
+}
+
+.btn-cancelar,
+.btn-comprar {
+  margin-left: 12px;
+}
+
+
+.carritoRelleno{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+.carritoRelleno img{
+  width: 90px;
+}
+.carritoRelleno p{
+  font-size: 17px;
+  margin-top: 5px;
+}
+.boton-borrar{
+  margin-top: 5px;
+  width: 100px;
+  height: 34px;
+  font-size: 10px;
+  font-weight: 100;
+}
+.boton-borrar:hover{
+  background-color: rgba(212, 52, 52, 1);
+}
+
+.total{
+  font-size: 15px;
+  font-weight: 600;
+}
+
 }

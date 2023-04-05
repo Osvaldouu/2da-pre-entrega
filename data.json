@@ -4,8 +4,7 @@
     "name": "Tomate Perita",
     "precio": 350,
     "presentacion": "Kilos",
-    "img": "../img/producto1.jpg",
-    "kilos": ""
+    "img": "../img/producto1.jpg"
   },
 
   {
@@ -13,8 +12,7 @@
     "name": "Anquin",
     "precio": 250,
     "presentacion": "Kilos",
-    "img": "../img/producto2.jpg",
-    "kilos": ""
+    "img": "../img/producto2.jpg"
   },
 
   {

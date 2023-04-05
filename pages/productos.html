@@ -36,8 +36,9 @@
                     <!-- Contenido del carrito de compras -->
                   </div>
                   <div class="modal-footer">
-                    <button class="btn-cancelar">Borrar Todo</button>
-                    <button class="btn-comprar">Comprar</button>
+                    <p id="totalProducto" class="total">total: $<span>0</span></p>
+                    <button class="btn-cancelar" onclick="vaciarModal()" id="btn-borrar-todo">Borrar Todo</button>
+                    <button class="btn-comprar" onclick="comprar()">Comprar</button>
                   </div>
                 </div>
               </div>
@@ -122,8 +123,9 @@
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src=" https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"> </script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

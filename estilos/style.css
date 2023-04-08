@@ -261,28 +261,10 @@ header {
 .card-container .cards h3 {
   font-weight: bold;
   font-size: 2.3rem;
-  letter-spacing: 2px;
+  letter-spacing: 10px;
+  margin-top: 40px;
 }
 
-.buton-card {
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 600;
-  margin-top: 10px;
-  padding: 20px 50px;
-  letter-spacing: 2px;
-  border: 3px solid rgba(144, 10, 10, 0.9668242296918768);
-  overflow: hidden;
-  background-color: white;
-  border-radius: 10px;
-  z-index: 1;
-  transition: all 0.6s ease;
-}
-
-.buton-card:hover {
-  background-color: rgba(144, 10, 10, 0.9668242296918768);
-  color: white;
-}
 
 /* ------swiper products-------------- */
 .swiper-name {

@@ -4,7 +4,8 @@
     "name": "Tomate Perita",
     "precio": 350,
     "presentacion": "Kilos",
-    "img": "../img/producto1.jpg"
+    "img": "../img/producto1.jpg",
+    "categoria": "verdura"
   },
 
   {
@@ -12,7 +13,8 @@
     "name": "Anquin",
     "precio": 250,
     "presentacion": "Kilos",
-    "img": "../img/producto2.jpg"
+    "img": "../img/producto2.jpg",
+    "categoria": "verdura"
   },
 
   {
@@ -20,7 +22,8 @@
     "name": "Pimiento Rojo",
     "precio": 650,
     "presentacion": "Kilos",
-    "img": "../img/producto3.jpg"
+    "img": "../img/producto3.jpg",
+    "categoria": "verdura"
   },
 
   {
@@ -28,7 +31,8 @@
     "name": "Durazno",
     "precio": 950,
     "presentacion": "Kilos",
-    "img": "../img/producto4.jpg"
+    "img": "../img/producto4.jpg",
+    "categoria": "fruta"
   },
 
   {
@@ -36,7 +40,8 @@
     "name": "Pera",
     "precio": 350,
     "presentacion": "Kilos",
-    "img": "../img/producto5.jpg"
+    "img": "../img/producto5.jpg",
+    "categoria": "fruta"
   },
 
   {
@@ -44,7 +49,8 @@
     "name": "Uva verde",
     "precio": 650,
     "presentacion": "Kilos",
-    "img": "../img/producto6.jpg"
+    "img": "../img/producto6.jpg",
+    "categoria": "fruta"
   },
 
   {
@@ -52,7 +58,8 @@
     "name": "Acelga",
     "precio": 80,
     "presentacion": "Atado",
-    "img": "../img/producto7.jpg"
+    "img": "../img/producto7.jpg",
+    "categoria": "verdeo"
   },
 
   {
@@ -60,7 +67,8 @@
     "name": "Zapallito",
     "precio": 300,
     "presentacion": "Kilos",
-    "img": "../img/producto8.jpg"
+    "img": "../img/producto8.jpg",
+    "categoria": "verdura"
   },
 
   {
@@ -68,7 +76,8 @@
     "name": "Rucula",
     "precio": 80,
     "presentacion": "Atado",
-    "img": "../img/producto9.jpg"
+    "img": "../img/producto9.jpg",
+    "categoria": "verdeo"
   },
 
   {
@@ -76,7 +85,8 @@
     "name": "Palta",
     "precio": 2700,
     "presentacion": "Kilos",
-    "img": "../img/producto10.jpg"
+    "img": "../img/producto10.jpg",
+    "categoria": "verdura"
   },
 
   {
@@ -84,7 +94,8 @@
     "name": "Cebolla",
     "precio": 180,
     "presentacion": "Kilos",
-    "img": "../img/producto11.jpg"
+    "img": "../img/producto11.jpg",
+    "categoria": "verdura"
   },
 
   {
@@ -92,7 +103,8 @@
     "name": "Berenjena",
     "precio": 250,
     "presentacion": "Kilos",
-    "img": "../img/producto12.jpg"
+    "img": "../img/producto12.jpg",
+    "categoria": "verdura"
   },
 
   {
@@ -100,7 +112,8 @@
     "name": "Batata",
     "precio": 350,
     "presentacion": "Kilos",
-    "img": "../img/producto13.jpg"
+    "img": "../img/producto13.jpg",
+    "categoria": "verdura"
   },
 
   {
@@ -108,7 +121,8 @@
     "name": "Pepino",
     "precio": 180,
     "presentacion": "Kilos",
-    "img": "../img/producto14.jpg"
+    "img": "../img/producto14.jpg",
+    "categoria": "verdura"
   },
 
   {
@@ -116,7 +130,8 @@
     "name": "Limon",
     "precio": 180,
     "presentacion": "Kilos",
-    "img": "../img/producto15.jpg"
+    "img": "../img/producto15.jpg",
+    "categoria": "fruta"
   },
 
   {
@@ -124,7 +139,8 @@
     "name": "Perejil",
     "precio": 80,
     "presentacion": "Atado",
-    "img": "../img/producto16.jpg"
+    "img": "../img/producto16.jpg",
+    "categoria": "verdeo"
   },
 
   {
@@ -132,7 +148,8 @@
     "name": "Ciboullete",
     "precio": 80,
     "presentacion": "Atado",
-    "img": "../img/producto17.jpg"
+    "img": "../img/producto17.jpg",
+    "categoria": "verdeo"
   },
 
   {
@@ -140,7 +157,8 @@
     "name": "Repollo Morado",
     "precio": 450,
     "presentacion": "Unidad",
-    "img": "../img/producto18.jpg"
+    "img": "../img/producto18.jpg",
+    "categoria": "verdura"
   },
 
   {
@@ -148,7 +166,8 @@
     "name": "Lechuga Crespa",
     "precio": 80,
     "presentacion": "Atado",
-    "img": "../img/producto19.jpg"
+    "img": "../img/producto19.jpg",
+    "categoria": "verdeo"
   },
 
   {
@@ -156,7 +175,8 @@
     "name": "Pimiento Verde",
     "precio": 350,
     "presentacion": "Kilos",
-    "img": "../img/producto20.jpg"
+    "img": "../img/producto20.jpg",
+    "categoria": "verdura"
   },
 
   {
@@ -164,7 +184,8 @@
     "name": "Naranja",
     "precio": 650,
     "presentacion": "Kilos",
-    "img": "../img/producto21.jpg"
+    "img": "../img/producto21.jpg",
+    "categoria": "fruta"
   },
 
   {
@@ -172,7 +193,8 @@
     "name": "Manzana Roja",
     "precio": 600,
     "presentacion": "Kilos",
-    "img": "../img/producto22.jpg"
+    "img": "../img/producto22.jpg",
+    "categoria": "fruta"
   },
 
   {
@@ -180,7 +202,8 @@
     "name": "Kiwi",
     "precio": 2600,
     "presentacion": "Kilos",
-    "img": "../img/producto23.jpg"
+    "img": "../img/producto23.jpg",
+    "categoria": "fruta"
   },
 
   {
@@ -188,7 +211,8 @@
     "name": "Ciruelo",
     "precio": 550,
     "presentacion": "Kilos",
-    "img": "../img/producto24.jpg"
+    "img": "../img/producto24.jpg",
+    "categoria": "fruta"
   },
 
   {
@@ -196,7 +220,8 @@
     "name": "Cherry",
     "precio": 800,
     "presentacion": "Kilos",
-    "img": "../img/producto25.jpg"
+    "img": "../img/producto25.jpg",
+    "categoria": "verdura"
   },
 
   {
@@ -204,7 +229,8 @@
     "name": "Pelon",
     "precio": 850,
     "presentacion": "Kilos",
-    "img": "../img/producto26.jpg"
+    "img": "../img/producto26.jpg",
+    "categoria": "fruta"
   },
 
   {
@@ -212,7 +238,8 @@
     "name": "Papas",
     "precio": 200,
     "presentacion": "Kilos",
-    "img": "../img/producto27.jpg"
+    "img": "../img/producto27.jpg",
+    "categoria": "verdura"
   },
 
   {
@@ -220,7 +247,8 @@
     "name": "Remolacha",
     "precio": 350,
     "presentacion": "Unidad",
-    "img": "../img/producto28.jpg"
+    "img": "../img/producto28.jpg",
+    "categoria": "verdura"
   },
 
   {
@@ -228,7 +256,8 @@
     "name": "Repollo Verde",
     "precio": 450,
     "presentacion": "Unidad",
-    "img": "../img/producto29.jpg"
+    "img": "../img/producto29.jpg",
+    "categoria": "verdura"
   },
 
   {
@@ -236,7 +265,8 @@
     "name": "Tomate Redondo",
     "precio": 350,
     "presentacion": "Kilos",
-    "img": "../img/producto30.jpg"
+    "img": "../img/producto30.jpg",
+    "categoria": "verdura"
   },
 
   {
@@ -244,7 +274,8 @@
     "name": "Zanahoria",
     "precio": 250,
     "presentacion": "Kilos",
-    "img": "../img/producto31.jpg"
+    "img": "../img/producto31.jpg",
+    "categoria": "verdura"
   },
 
   {
@@ -252,7 +283,8 @@
     "name": "Banana",
     "precio": 600,
     "presentacion": "Kilos",
-    "img": "../img/producto32.jpg"
+    "img": "../img/producto32.jpg",
+    "categoria": "fruta"
   },
 
   {
@@ -260,7 +292,8 @@
     "name": "Brocoli",
     "precio": 350,
     "presentacion": "Unidad",
-    "img": "../img/producto33.jpg"
+    "img": "../img/producto33.jpg",
+    "categoria": "verdura"
   },
 
   {
@@ -268,7 +301,8 @@
     "name": "Cebolla Morada",
     "precio": 450,
     "presentacion": "Kilos",
-    "img": "../img/producto34.jpg"
+    "img": "../img/producto34.jpg",
+    "categoria": "verdura"
   },
 
   {
@@ -276,7 +310,8 @@
     "name": "Ajo",
     "precio": 120,
     "presentacion": "Unidad",
-    "img": "../img/producto35.jpg"
+    "img": "../img/producto35.jpg",
+    "categoria": "verdura"
   },
 
   {
@@ -284,7 +319,8 @@
     "name": "Uva Morada",
     "precio": 650,
     "presentacion": "Kilos",
-    "img": "../img/producto36.jpg"
+    "img": "../img/producto36.jpg",
+    "categoria": "fruta"
   }
 
 ]

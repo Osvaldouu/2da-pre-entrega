@@ -34,6 +34,27 @@ const swiper = new Swiper('.swiper', {
   },
 
 });
+//---------modal-------------//
+const openBtn = document.getElementById("btn-abrir-modal");
+const modal = document.querySelector(".modal");
+const closeBtn = document.querySelector(".close");
+
+openBtn.addEventListener("click", showModal);
+function showModal() {
+  modal.style.display = "block";
+}
+
+function closeModal() {
+  modal.style.display = "none";
+}
+closeBtn.addEventListener("click", closeModal);
+window.addEventListener("click", function (event) {
+  if (event.target == modal) {
+    closeModal();
+  }
+});
+const btnBorrar = document.querySelector ("#btn-borrar-todo")
+
 
 
 //---------------- cards--------------//
@@ -50,13 +71,14 @@ cardVerduras.forEach((cards)=>{
   div.classList.add ("cards")
   div.innerHTML = `
   <img src="${cards.img}" alt="${cards.name}">
-  <h3 class="text-card">${cards.name}</h3>
+  <h3 class="text-card" id="nombre-catalogo">${cards.name}</h3>
   
-  <button class="buton-card" id="">Catalogo</button>
   `
   
   productContainer.appendChild(div)
 })
+
+
 
 
 //---------------------- swpiter productos---------------------//
@@ -66,7 +88,7 @@ const swiperProducts = new Swiper('.swiper-product', {
   direction: 'horizontal',
   loop: true,
   autoplay: {
-     delay: 3000,
+     delay: 2000,
   },
 });
 

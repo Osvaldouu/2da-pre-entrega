@@ -1,3 +1,4 @@
+
 //button//
 
 const nav = document.getElementById("nav");
@@ -34,6 +35,7 @@ window.addEventListener("click", function (event) {
 const btnBorrar = document.querySelector ("#btn-borrar-todo")
 
 //catalogos//
+
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 
@@ -60,6 +62,7 @@ function renderProducto(prod) {
     <img src="${objeto.img}" alt="${objeto.name}">
     <p class="precio-producto">$ ${objeto.precio}</p>
     <p class="p-product">${objeto.presentacion}</p>
+    <p class="p-categoria">${objeto.categoria}</p>
     <h3 class="name-product">${objeto.name}</h3>
     
     <button id="agregar${objeto.id}" class="b-product btn-41" >Agregar al Carrito</button>
@@ -128,6 +131,7 @@ function eliminarProducto(productoID) {
   localStorage.setItem("carrito", JSON.stringify(carrito));
   actualizarModal();
   actualizarContador();
+  calcularTotal(); 
   actualizarContadorBoton();
 }
 
@@ -173,5 +177,6 @@ function calcularTotal() {
   const spanTotal = totalProducto.querySelector('span');
   spanTotal.innerHTML = `${total.toFixed(2)}`;
 }
+
 
 

@@ -24,8 +24,23 @@
             </ul>
         </nav>
         <div class="iconos">
-            <i class='bx bx-cart-alt'><span id="counter">0</span></i>
-        </div>
+            <button id="btn-abrir-modal"><i class='bx bx-cart-alt'><span id="counter">0</span></i></button>
+            <div class="modal">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2>Carrito de compras</h2>
+                    <span class="close">&times;</span>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Contenido del carrito de compras -->
+                  </div>
+                  <div class="modal-footer">
+                    <p id="totalProducto" class="total">total: $<span>0</span></p>
+                    <button class="btn-cancelar" onclick="vaciarModal()" id="btn-borrar-todo">Borrar Todo</button>
+                    <button class="btn-comprar" onclick="comprar()">Comprar</button>
+                  </div>
+                </div>
+              </div>
     </header>
     <main>
         <!-- Slider main container -->
@@ -46,7 +61,7 @@
 
     <section class="shop-container">
 
-        <h1 class="shop-titulo">Seleccione su Catalogo:</h1>
+        <h1 class="shop-titulo">Nuestro Productos Especializados:</h1>
 
         <div class="card-container" id="productos""></div>
     </section>
@@ -140,10 +155,9 @@
                         target="_blank">Proyecto
                         by Osvaldo Carrizo</a>
                 </div>
-                </footer>
+                </footer>        
                 <script src=" https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"> </script>
-                <script src="./js/name.js">
-                </script>
+                <script src="./js/name.js"></script>
 </body>
 
 </html>
